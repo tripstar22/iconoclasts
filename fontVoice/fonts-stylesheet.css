@@ -1,0 +1,32 @@
+/*
+Downloaded from hubertjocham.de on 2013/Aug/07.
+Order No.: 1829
+*/
+/*
+How to use:
+the font files should reside in the same folder as this stylesheet.
+if you move the font files or the stylesheet you will have to adjust the paths in the @font-face definition
+e.g.:
+font-family: '{}';
+src: url('path/to/font/files/font-file.eot');
+[ ... ]
+*/
+@font-face {
+font-family: 'voicepro-book';
+src: url('voicepro-book-webfont.eot');
+src:	url('voicepro-book-webfont.eot?#iefix') format('embedded-opentype'),
+url('voicepro-book-webfont.woff') format('woff'),
+url('voicepro-book-webfont.ttf') format('truetype'),
+url('voicepro-book-webfont.svg#voicepro-book') format('svg');
+font-weight: normal;
+font-style: normal;
+}@font-face {
+font-family: 'voicepro-semibold';
+src: url('voicepro-semibold-webfont.eot');
+src:	url('voicepro-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+url('voicepro-semibold-webfont.woff') format('woff'),
+url('voicepro-semibold-webfont.ttf') format('truetype'),
+url('voicepro-semibold-webfont.svg#voicepro-semibold') format('svg');
+font-weight: normal;
+font-style: normal;
+}

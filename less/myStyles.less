@@ -1,0 +1,1167 @@
+
+//STYLES
+html body {
+	padding-top: 0;
+	position: relative;
+	font-family: @theFont;
+	padding: 0 !important;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+#hero, #mission,
+#experiment, #team, #journey {
+	display: block;
+}
+
+.navbar {
+	margin-bottom: 0;
+	z-index: 9999;
+}
+
+.navbar .navbar-inner {
+	padding-left: 0;
+}
+
+.navbar .brand {
+	padding-top: 23px;
+}
+
+.navbar .nav > li {
+	border-top: 5px transparent solid;
+}
+
+.navbar .nav > li:hover {
+	border-top: 5px @myOrange solid;
+
+	-webkit-transition: all ease 0.3s;
+	-moz-transition: all ease 0.3s;
+	-o-transition: all ease 0.3s;
+	-ms-transition: all ease 0.3s;
+	transition: all ease 0.3s;
+}
+
+.navbar .nav > li > a {
+	padding-top: 22px;
+}
+
+html body .navbar-inverse .nav .active > a {
+	background-color: transparent;
+}
+
+html body .navbar-inverse .nav .active > a, .navbar-inverse .nav .active > a:hover {
+	background-color: transparent;
+}
+
+.navbar-inner {
+	padding-bottom: 1.5%;
+}
+
+.navbar-inner .navContainer {
+	margin-top: 0;
+}
+
+.navbar h1 {
+	display: inline;
+	color: @myWhite;
+	font-size: 1em;
+	margin: 0 0 50px;
+	margin-left: 50px;
+	line-height: 0;
+}
+
+.navbar-inner {
+	position: relative;
+	z-index: 9999;
+}
+
+.nav-collapse .nav {
+	left: 21%;
+}
+
+.navbar .navbar-inner .navContainer .nav-collapse .teamNav {
+	left: 15%;
+}
+
+.nav-collapse .nav li a {
+	padding-right: 20px;
+	color: #999;
+}
+
+.nav li a:active {
+	background-color: none;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+#mission .manifesto {
+	margin-left: 10%;
+}
+
+.headerWrap {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 100%;
+}
+
+.bioName {
+	color: @myOrange;
+	font-size: @h1Style;
+	line-height: 1em;
+	padding: 22% 0 0 50%;
+	background-color: transparent;
+	font-family: @semiBoldFont;
+}
+
+.workTitle {
+	color: @myWhite;
+	font-size: @h2Style;
+	display: block;
+	margin: 10% 0 10% 0;
+}
+
+.profilePic {
+	width: 100%;
+}
+
+#memberHero {
+	min-width: 100%;
+	position: relative;
+}
+
+.copyContent {
+	color: @myWhite;
+	font-size: 1em;
+	line-height: 1.6em;
+}
+
+.theTeam {
+	width: 100%;
+}
+
+.blogDropdown {
+	margin-left: 35%;
+}
+
+.blogPostToggle {
+	color: @myLightGrey;
+	padding-right: 5%;
+}
+
+.blogPostToggle:hover {
+	color: @grayLighter;
+
+	-webkit-transition: all ease 0.3s;
+	-moz-transition: all ease 0.3s;
+	-o-transition: all ease 0.3s;
+	-ms-transition: all ease 0.3s;
+	transition: all ease 0.3s;
+}
+
+.viewProfile {
+	margin-bottom: 5%;
+}
+
+.viewProfile a {
+	color: @myLightGrey;
+	font-size: 18px;
+	font-family: @semiBoldFont;
+}
+
+.viewProfile a:hover {
+	color: @grayLighter;
+
+	-webkit-transition: all ease 0.3s;
+	-moz-transition: all ease 0.3s;
+	-o-transition: all ease 0.3s;
+	-ms-transition: all ease 0.3s;
+	transition: all ease 0.3s;
+}
+
+.listItemInline {
+	display: inline;
+}
+
+.blogPostBottomLinks {
+	margin-left: 0;
+	margin-top: 8%;
+	list-style: none;
+}
+
+.postBy {
+	color: @myLightGrey;
+}
+
+.postBy a {
+	color: @myLightGrey;
+	text-decoration: underline;
+
+	&:hover {
+		color: @white;
+
+		-webkit-transition: all ease 0.3s;
+		-moz-transition: all ease 0.3s;
+		-o-transition: all ease 0.3s;
+		-ms-transition: all ease 0.3s;
+		transition: all ease 0.3s;
+	}
+}
+
+html body .navbar .nav .navColor {
+	color: #999;
+}
+
+
+//NESTING
+
+html body .sideNav .sideNavList {
+	width: 15%;
+	margin: 5% 0 0 5%;
+	background-color: #131313;
+	padding-bottom: 10px;
+
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+
+	li a {
+		color: @myWhite;
+		text-shadow: none;
+	}
+
+	li a:active {
+		background-color: none;
+		color: @myOrange;
+	}
+}
+
+#journey .journeyPosts .myOrbit {
+	margin-bottom: 0;
+}
+
+.pagination .sliderNav {
+	
+	a {
+		background-color: @black;
+		color: @grayLighter;
+		font-family: @semiBoldFont;
+		border: 1px solid @myLightGrey;
+
+		&:hover {
+			background-color: @black;
+		}
+	}
+
+	li.active a {
+			color: @myOrange;
+			background-color: @black;
+		}
+}
+
+.mySocial {
+	margin-left: 0;
+	list-style: none;
+	margin-top: 5%;
+
+	li {
+		display: inline;
+		margin-right: 10px;
+
+		a:hover {
+			text-decoration: none;
+		}
+
+		i {
+			color: @myLightGrey;
+		}
+
+		i:hover {
+			color: @myWhite;
+
+			-webkit-transition: all ease 0.3s;
+			-moz-transition: all ease 0.3s;
+			-o-transition: all ease 0.3s;
+			-ms-transition: all ease 0.3s;
+			transition: all ease 0.3s;
+		}
+	}
+
+}
+
+#myCarouselTo .carousel-control {
+	position: fixed;
+	top: 540px;
+}
+
+.socialHeader {
+	display: block;
+	float: right;
+	list-style-type: none;
+	margin: 18px 3% 0 0;
+
+	li {
+		display: inline;
+		padding-left: 10px;
+
+		a:hover {
+			text-decoration: none;
+		}
+
+		i {
+			color: @myLightGrey;
+		}
+
+		i:hover {
+			color: @myWhite;
+
+			-webkit-transition: all ease 0.3s;
+			-moz-transition: all ease 0.3s;
+			-o-transition: all ease 0.3s;
+			-ms-transition: all ease 0.3s;
+			transition: all ease 0.3s;
+		}
+	}
+}
+
+.rightSideContentContainer {
+	padding: 3% 8% 15% 8%;
+
+	h2 {
+		color: @myWhite;
+		padding: 30px 0 10px 0; 
+	}
+
+	h3 {
+		color: @myWhite;
+		font-size: @h4Style;
+		margin-top: 5%;
+	}
+
+	.contactInfo {
+		list-style: none;
+		margin-left: 0;
+		color: @myWhite;
+
+		li {
+			margin-bottom: 2%;
+		}
+	}
+}
+
+.blogVideo {
+	padding-top: 30px;
+}
+
+.videoParagraph {
+	color: @myLightGrey;
+	padding-top: 20px;
+
+	a {
+		color: @myOrange;
+	}
+}
+
+#myBlog {
+	background-color: @myLightGrey;
+	border-top: 6px @myOrange solid;
+	background-image: url(../img/asfalt.png);
+
+	.blogTitleBox {
+		background-color: @myOrange;
+
+		.span7 {
+			padding-left: 8%;
+		}
+
+		.span7 p {
+			color: @myDarkGrey;
+			padding: 1% 0;
+			font-size: 1em;
+		}
+	}
+}
+
+#hero {
+	width: 100%;
+	background-image: url(../img/bgHero.jpg);
+	background-size: cover;
+
+	.heroImg {
+		text-align: center;
+	}
+
+	img {
+		margin: 25% 0 0 0;
+	}
+
+	p {
+		font-size: 21px;
+		color: @myWhite;
+	}
+
+	.subHeaderLineOne {
+		margin: 2% 0 15px 45%;
+		text-align: left;
+	}
+
+	.subHeaderLineTwo {
+		margin: 0 0 0 45%;
+		text-align: left;
+		padding-bottom: 31%;
+	}
+}
+
+#blog {
+	background: url(../img/abstractPattern.jpg);
+	width: 100%;
+
+	h1 {
+		color: @myOrange;
+		line-height: 1.3em;
+		margin-bottom: 35px;
+	}
+
+	.postBy {
+		color: @myLightGrey;
+		font-size: 0.9em;
+		margin-bottom: 50px;
+	}
+
+	.blogContentImg {
+		margin: 5% 0;
+	}
+
+}
+
+#bio {
+	background: url(../img/abstractPattern.jpg);
+
+	.contactInfo li a {
+		color: @myWhite;
+		text-decoration: none;
+	}
+
+	.contactInfo li a:hover {
+		color: @myOrange;
+
+		-webkit-transition: all ease 0.3s;
+		-moz-transition: all ease 0.3s;
+		-o-transition: all ease 0.3s;
+		-ms-transition: all ease 0.3s;
+		transition: all ease 0.3s;
+	}
+}
+
+#mission {
+	background-image: url(../img/abstractPattern.jpg);
+	width: 100%;
+	overflow: visible;
+
+	h2 {
+		color: @myOrange;
+		font-size: @h3Style;
+		margin: 5% 10% 8% 0;
+		line-height: 1em;
+		font-family: @semiBoldFont;
+	}
+}
+
+#experiment {
+	background-color: @myOrange;
+
+	.leftSideExperiment {
+		margin-left: 0;
+	}
+
+	.rightSideExperiment {
+		margin: 0;
+
+		h3 {
+			color: @myWhite;
+			font-size: 1.2em;
+			margin: 8% 20% 40px 20%;
+			line-height: 1.2em;
+			font-family: @semiBoldFont;
+		}
+
+		p {
+			color: @myDarkGrey;
+			font-size: 0.8em;
+			margin: 0 20% 40px 20%;
+		}
+	}
+}
+
+#team {
+	width: 100%;
+
+	.teamList {
+		background: @myDarkGrey;
+		width: 100%;
+
+		ul {
+			list-style: none;
+			padding: 2% 0;
+			text-align: center;
+			margin: 0;
+		}
+
+		ul li {
+			display: inline;
+			font-family: @theFont;
+			margin: 0 3%;
+			font-size: 21px;
+		}
+
+		ul li a {
+			color: @myLightGrey;
+			text-decoration: none;
+		}
+
+		ul li a:hover {
+			color: @myWhite;
+
+			-webkit-transition: all ease 0.3s;
+			-moz-transition: all ease 0.3s;
+			-o-transition: all ease 0.3s;
+			-ms-transition: all ease 0.3s;
+			transition: all ease 0.3s;
+		}
+	}
+}
+
+#journey {
+	background-image: url(../img/asfalt.png);
+	border-top: 6px @myOrange solid;
+
+	.sortPosts {
+		width: 100%;
+		min-width: 100%;
+		background-color: @myOrange;
+		min-height: 20px;
+		padding: 10px 0;
+
+		.blogFilter {
+			margin-left: 50%;
+		}
+
+		a {
+			text-decoration: none;
+			color: @myDarkGrey;
+		}
+
+		ul li a:hover {
+			text-decoration: none;
+			background-color: @myOrange;
+		}
+
+		ul {
+			background-color: @myOrange;
+		}
+
+		ul li {
+			text-transform: uppercase;
+			margin: 8px 0 8px 0;
+			overflow: visible;
+		}
+
+		ul li:hover {
+			background-color: @myOrange;
+		}
+
+		ul li.teamMember {
+			border-bottom: @myDarkGrey 1px solid;
+			padding-bottom: 9px;
+		}
+
+	.journeyWrap {
+		margin: 0;
+		width: 100%;
+		margin-right: none;
+		margin-left: none;
+
+		.flexWrap {
+			margin: 0;
+		}
+	}
+
+	}
+
+	.blogDropdown .postsBy li:hover {
+		background-color: @myOrange;
+	}
+
+	.dropdown-menu > li > a:hover {
+		background-image: none;
+	}
+
+	.postsBy a {
+		color: @myWhite;
+	}
+
+	.postsBy a:hover {
+		background-color: none;
+	}
+
+	.journeyPosts .thisPost {
+		text-align: center;
+	} 
+}
+
+footer {
+	background-color: @myDarkGrey;
+	margin-bottom: 0;
+	min-width: 100%;
+	width: 100%;
+	min-height: 200px;
+	border-top: 6px @myOrange solid;
+
+	.footerLogo {
+		margin: 5% 0 0 50px;
+		font-size: 1.2em;
+		float: left;
+
+		a {
+			color: @myWhite;
+		}
+
+		a:hover {
+			text-decoration: none;
+		}
+	}
+
+	.contactInfo {
+		float: right;
+		list-style: none;
+		margin: 5% 8% 0 0;
+		// padding-bottom: 50px;
+
+		.footerListHeader {
+			color: @myOrange;
+			font-size: 1.1em;
+		}
+
+		li {
+			line-height: 1.4em;
+		}
+
+		a {
+			color: @myLightGrey;
+			line-height: 1em;
+		}
+
+		a:hover {
+			text-decoration: none;
+			color: @myWhite;
+
+			-webkit-transition: all ease 0.3s;
+			-moz-transition: all ease 0.3s;
+			-o-transition: all ease 0.3s;
+			-ms-transition: all ease 0.3s;
+			transition: all ease 0.3s;
+		}
+	}
+
+}
+
+.profileNav {
+	margin: 20px 0 0 30px;
+
+	.nav-header {
+		text-shadow: none;
+		font-size: 16px;
+	}
+
+	li a {
+		color: @myLightGrey;
+		text-shadow: none;
+	}
+	
+}
+
+.rightSideContentContainer .myExamples {
+	margin: 5% 0;
+}
+
+.rightSideContentContainer .blogList {
+	list-style: none;
+	margin-left: 0;
+	padding-top: 5%;
+
+	li {
+		line-height: 30px;
+
+		a {
+			color: @myOrange;
+
+			&:hover {
+				color: @myOrange;
+			}
+		}
+	}
+}
+
+.rightSideContentContainer .blogLinkSpecial {
+	color: @myOrange;
+
+		&:hover {
+			color: @myOrange;
+		}
+}
+
+
+/*========================================
+=            min-width 1200px            =
+========================================*/
+
+@media only screen and (min-width: 1200px) {
+
+	//STYLES
+	html body .navbar-inverse .nav-collapse .nav > li > a:hover {
+		background-color: transparent;
+	}
+
+	.nav-collapse .nav {
+		left: 24%;
+	}
+
+	.navbar .navbar-inner .navContainer .nav-collapse .teamNav {
+		left: 21%;
+	}
+
+	//NESTING
+
+	#mission {
+
+		h2 {
+			margin: 10% 15% 10% 0;
+		}
+	}
+
+	#experiment {
+
+		.rightSideExperiment h3 {
+			font-size: 2em;
+		}
+
+		.rightSideExperiment p {
+			font-size: 1em;
+			line-height: 1.3em;
+		}
+	}
+
+	.blogContentImg {
+		padding-right: 30px;
+	}
+
+	#myCarouselTo .carousel-control {
+		position: fixed;
+		top: 580px;
+	}
+
+	footer {
+
+		.footerLogo {
+			margin: 3% 0 0 50px;
+		}
+
+		.contactInfo {
+			margin: 3% 8% 0 0; 
+		}
+	}
+}
+
+
+
+/*-----  End of min-width 1200px  ------*/
+
+
+
+/*=============================================
+=            max width 979px            =
+=============================================*/
+
+@media only screen and (max-width: 979px) {
+
+	//STYLES
+
+	html body .navbar-inverse .nav-collapse .nav > li > a:hover {
+		background-color: transparent;
+	}
+
+
+	.iconoclastsTitle {
+		width: 75%;
+	}
+
+	.navbar .btn-navbar {
+		margin-top: 18px;
+	}
+
+	.nav-collapse .nav {
+		left: 0;
+	}
+
+	.navbar .navbar-inner .navContainer .nav-collapse .teamNav {
+		left: 0;
+	}
+
+	.myNav .navbar-inner .navContainer .btn-navbar {
+		margin-top: 22px;
+	}
+
+	.navbar .nav > li {
+		border-top: none;
+	}
+
+	.navbar .nav > li:hover {
+		border-top: none;
+	}
+
+	.socialHeader {
+		float: left;
+		padding-bottom: 20px;
+		margin-top: 5px;
+	}
+
+	html body .navbar-inverse .nav-collapse .nav > li > a:hover {
+		color: #999;
+	}
+
+	#hero .subHeaderLineOne {
+		margin: 2% 3% 15px 40%;
+	}
+
+	#hero .subHeaderLineTwo {
+		margin: 0 3% 0 40%;
+	}
+
+	//NESTING
+
+	#experiment {
+
+
+		.rightSideExperiment {
+
+			h3 {
+				font-size: 1em;
+				margin: 8% 10% 20px 10%;
+			}
+
+			p {
+				margin: 8% 10% 20px 10%;
+			}
+		}
+	}
+
+	#myCarouselTo .carousel-control {
+		position: fixed;
+		top: 480px;
+	}
+
+}
+
+
+
+/*-----  End of max width 979px  ------*/
+
+
+
+/*=======================================
+=            min-width 767px            =
+=======================================*/
+
+@media only screen and (min-width: 767px) {
+
+//STYLES
+
+	html body .navbar-inverse .nav-collapse .nav > li > a:hover {
+		background-color: transparent;
+	}
+
+	body .navbar {
+		margin-top: 0;
+		max-height: 60px;
+	}
+
+	.myNav {
+		width: 100%;
+	}
+
+	.navbar.affix {
+	    position: fixed;
+	    top: 0;
+	    width: 100%;
+	    max-height: 60px;
+	}
+
+	.nav-collapse {
+		padding-left: 40px;
+	}
+
+	.brand p {
+		padding-right: 120px;
+		margin-left: 50px;
+	}
+
+	#mission h2 {
+		font-size: @h3Style / 1.3;
+		line-height: 1.1em;
+	}
+
+	.sortPosts .dropdown-toggle {
+		margin-left: 35%;
+	}
+
+
+//NESTING
+
+	.navbar {
+		background-color: @myDarkGrey;
+		margin-top: 0;
+		max-height: 60px;
+		min-width: 100%;
+		width: 100%;
+
+		.navbar .navbar-inner {
+			display: inline;
+			padding: 0;
+		}
+
+		.brand p {
+			color: @myWhite;
+		}
+
+		.nav {
+
+			.navColor {
+				color: @myLightGrey;
+			}
+		}
+	}
+
+	#experiment.rightSideExperiment {
+
+		h3 {
+			font-size: 2em;
+			margin: 8% 0 30px 10%;
+		}
+	}
+
+}
+
+
+
+/*-----  End of min-width 767px  ------*/
+
+
+
+/*=======================================
+=            max-width 767px            =
+=======================================*/
+
+@media only screen and (max-width: 767px) {
+
+//STYLES
+
+	html body {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	body.navbar {
+		margin-top: 0;
+		max-height: 60px;
+		width: 100%;
+		min-width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.myNav {
+		width: 100%;
+	}
+
+	.navbar.affix {
+	    position: fixed;
+	    top: 0;
+	    width: 100%;
+	    max-height: 60px;
+	}
+
+	.nav-collapse {
+		padding-left: 40px;
+	}
+
+	.navbar .navbar-inner .brand {
+		margin-top: 3px;
+	}
+
+	.navbar .navbar-inner .btn-navbar {
+		margin-top: 24px;
+	}
+
+	.myNav .navbar-inner .navContainer .brand {
+		padding-top: 12px;
+	} 
+
+	.myNav .navbar-inner .navContainer .btn-navbar {
+		margin-top: 14px;
+	}
+
+	.myNav .navbar-inner .navContainer .brand h1 {
+		margin-left: 37px;
+	}
+
+	.brand p {
+		padding-right: 120px;
+		margin-left: 50px;
+	}
+
+	.leftSideExperiment img {
+		width: 100%;
+	}
+
+	.blogDropdown {
+		margin-left: 10%;
+	}
+
+	#myBlog .blogTitleBox .span7 p {
+		padding: 0;
+		font-size: 1.1em;
+
+	}
+
+	html body .navbar-inverse .nav-collapse .nav > li > a:hover {
+		background-color: transparent;
+	}
+
+	.workTitle {
+		line-height: 55px;
+	}
+
+
+
+//NESTING
+
+	.navbar {
+		background-color: @myDarkGrey;
+		margin-top: 0;
+		max-height: 60px;
+		min-width: 100%;
+		width: 100%;
+
+		.navbar .navbar-inner {
+			display: inline;
+			padding: 0;
+		}
+
+		.brand p {
+			color: @myWhite;
+		}
+
+		.nav {
+
+			.navColor {
+				color: @myLightGrey;
+			}
+		}
+
+		.nav-collapse .socialHeader {
+			margin-left: 5px;
+		}
+	}
+
+	#hero {
+
+		img {
+			margin-top: 20%;
+		}
+
+		p {
+			margin: 2% 0 37% 0;
+			font-size: 14px;
+			margin-bottom: 30%;
+		}
+
+		.subHeaderLineOne {
+			margin-bottom: 8px;
+		}
+
+	}
+
+	#mission {
+
+		.manifesto {
+			line-height: 1.3em;
+			margin: 18% 16%;
+		}
+	}
+
+	#experiment {
+
+		.rightSideExperiment {
+
+			h3 {
+				font-size: 1.5em;
+				margin: 10% 10% 10px 10%;
+			}
+
+			p {
+				margin-bottom: 20%;
+				font-size: 1em;
+				line-height: 1.4em;
+			}
+		}
+	}
+
+	#team {
+
+		.teamList {
+
+			ul li {
+				font-size: 0.8em;
+			}
+		}
+	}
+
+	#journey {
+
+		.sortPosts .dropdown-toggle {
+			margin-left: 10%;
+		}
+	}
+
+	#myCarouselTo .carousel-control {
+		position: fixed;
+		top: 400px;
+	}
+
+	footer {
+
+		.footerLogo {
+			float: none;
+			margin-left: 42px;
+		}
+
+		.contactInfo {
+			float: none;
+			margin-left: 42px;
+		}
+	}
+
+}
+
+
+
+/*-----  End of max-width 767px  ------*/
+
+
+

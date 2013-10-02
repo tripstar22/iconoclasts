@@ -1,0 +1,144 @@
+h1, h2, h3,
+h4, h4, h6 {
+	font-family: 'Exo', sans-serif;
+	color: #222;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-size: 45px;
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+
+h3 {
+	font-weight: 400;
+	font-size: 20px;
+}
+
+p,
+ul li {
+	font-family: 'Exo', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: #222;
+}
+
+a {
+	text-decoration: none !important;
+	color: #222;
+}
+
+#hero, #mission,
+#team, #journey {
+	display: block;
+	height: 100%;
+}
+
+#hero,
+#mission, #team {
+	margin-bottom: 400px;
+}
+
+#hero img {
+	margin: 40px 0;
+}
+
+#hero p {
+	text-align: center;
+	font-size: 20px;
+}
+
+#mission,
+#team, #blog h2 {
+	margin-left: 30px;
+}
+
+#mission p {
+	width: 500px;
+}
+
+#team img {
+	float: right;
+	margin: 50px 0 50px 0;
+}
+
+#team ul {
+	margin: 0 60px 0 0;
+	list-style-type: none;
+	float: left;
+}
+
+#team .medNumber {
+	font-weight: 600;
+	font-size: 35px;
+	float: left;
+}
+
+#team .teamList {
+	margin-top: 30px;
+}
+
+#team .memberInfo {
+	margin-left: 35px;
+}
+
+#journey {
+	margin-bottom: 100px;
+}
+
+#journey img {
+	float: right;
+}
+
+.container
+ul li a {
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.navbar.affix {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+.nav-collapse .nav {
+	margin-left: 200px;
+}
+
+.social {
+	float: right;
+	list-style-type: none;
+}
+
+.social li {
+	display: inline;
+	padding-left: 10px;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+	#hero img {
+		margin: 70px 0 50px 0;
+	}
+
+}
+
+@media (min-width: 979px) {
+	#hero img {
+		margin-left: 150px;
+}
+
+}
+
+@media (min-width: 1200px) {
+	#hero img {
+		margin-left: 275px;
+}
+
+}
